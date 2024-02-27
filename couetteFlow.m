@@ -8,7 +8,7 @@ Re = 5000;              % reynolds number
 plateVelocity = 1;      % in m/s
 deltaY = 1/n;
 y = 0:deltaY:1;
-deltaT = 0.5;           % Choosen as per CFL condition for stability
+deltaT = 6;           % Choosen as per CFL condition for stability
 u = zeros(1,n+1);       % inital condition
 u(n+1) = plateVelocity; % boundary condition : plate velocity
 
