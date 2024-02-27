@@ -17,7 +17,7 @@ u0_5 = zeros(1,m);      % velocity at half height at each time step
 
 %---------------------Numerical solution-------------------------------
 for i=1:m 
-    E = i*deltaT/(Re*deltaY^2);
+    E = deltaT/(Re*deltaY^2);
     a = (1+E)*ones(1,n-1);
     b = -E/2*ones(1,n-1);
     c = -E/2*ones(1,n-1);
@@ -101,7 +101,7 @@ if sum==0
 else
     fprintf("Unsteady state prevails...")
 end
-% In this case, steady state achieved at 150th timestep
+% In this case, steady state achieved at 936th timestep
 
 
 
