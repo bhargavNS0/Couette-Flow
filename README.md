@@ -9,4 +9,5 @@ With the chosen values of Reynolds number and dy (deltaY), dt (deltaT) is calcul
 
 The tridiagonal matrix is solved using TDMA (Tri-Diagonal Matrix Algorithm) also known as Thomas Algorithm.
 
-
+Reference:
+Computational Fluid Dynamics the Basics with Applications - John D. Anderson
