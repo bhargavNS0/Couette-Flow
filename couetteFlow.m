@@ -16,8 +16,8 @@ m = input("Enter the nth timestep: ");
 u0_5 = zeros(1,m);      % velocity at half height at each time step
 
 %---------------------Numerical solution-------------------------------
+E = deltaT/(Re*deltaY^2);
 for i=1:m 
-    E = deltaT/(Re*deltaY^2);
     a = (1+E)*ones(1,n-1);
     b = -E/2*ones(1,n-1);
     c = -E/2*ones(1,n-1);
