@@ -86,15 +86,13 @@ plot(1:m,u0_5);
 xlabel("\Delta t");
 ylabel("Velocity [m/s]");
 
-%------------------------Checking the steady -----------------
+%------------------------Checking the steady state -----------------
 error = zeros(1,n+1);
 sum = 0;
 for i=2:n+1
     error(i) = u1(i)-u(i);
-    if error(i) < 0.00001
-        error(i) = 0;
-    else
-        sum = sum + error(i);
+    if error(i) > 0.00001
+        sum = sum + 1;
     end
 end
 
